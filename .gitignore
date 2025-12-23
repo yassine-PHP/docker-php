@@ -1,0 +1,5 @@
+# Ignore Docker-generated data
+/mysql/
+/vendor/
+.env
+
