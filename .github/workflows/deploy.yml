@@ -10,8 +10,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Start Docker
-        run: docker-compose up -d --build
+      - name: Start Docker --wait
+        run: docker compose up -d --build
 
       - name: Fix Permissions
         run: docker exec doker-php-php-app-1 chown -R www-data:www-data /var/www/html
